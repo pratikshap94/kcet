@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "kcet"
+  "defaultProject": "kcet",
+  "cli": {
+    "analytics": false
+  }
 }

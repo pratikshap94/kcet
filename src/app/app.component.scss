@@ -1,0 +1,99 @@
+.row {
+    margin:3% 3% 3% 3%;
+    height: 100%;
+  }
+
+  // Carousel
+  .carousel {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    width: 65%;
+    height: 85%;
+    border: 24px solid #F8F8F8;
+    border-radius: 64px;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+    // overflow: hidden;   indicators hiding behind
+  }
+
+  .carousel-item{
+    width: 100%;
+    height: 100%;
+  }
+  // .w-100 {
+  //   width: 100% !important;
+  //   height: 75vh;
+  // }
+  .carousel-inner {
+    border-radius: 40px; 
+    height: 100%;
+     }
+  .carousel-inner > .carousel-item > img {
+    border-radius: 40px;
+    height: 100%;
+    object-fit: fill;
+  //  height: 77vh;   to set height of the image slider to the full screen / upto 100 view port height.
+  }
+  .carousel-indicators {
+    bottom: -70px;
+  }
+  .carousel-indicators button{
+      background-color: rgb(187, 175, 175);
+      border-radius: 11px;
+      height: 4px;
+  }
+  .carousel-indicators  .active{
+    background-color:  #3EBC78;
+}
+
+//   form
+.col-sm-3{
+  margin-top: 3%;
+  height: 100%;
+}
+
+#logo_img{
+      margin-left: 20%;
+      width: 60%;
+      height: 45%;
+      border-radius: 0%;
+  }
+
+//   form{
+//     margin-top: 5%;
+//   }
+//   label{
+//     margin-bottom: 7%;
+//   }
+
+//   p{
+//       margin-top: 50px;  
+//       font-size: 16px;
+//       line-height: 0px;
+//   }
+
+//   .btn{
+//     background-color: #3EBC78;
+//     width: 100%;
+//     height: 100%;
+//     color: white;
+//     border-radius: 5px;
+//     font-style: normal;
+//     font-size: 16px;
+//     line-height: 20px;
+// }
+
+// .btn-google{
+//   background: #2D3748;
+//   border-radius: 5px;
+// }
+
+// .btn-google img{
+//  width: 20%;
+//  height: 20%;
+//  margin-left: 2.65%;
+//  margin-right: 3%;
+ 
+// }
+  
