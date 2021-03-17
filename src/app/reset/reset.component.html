@@ -1,11 +1,14 @@
 <p>Forgot password?</p>
       <h4 class="heading">Request for a Reset!</h4>
+
       <form [formGroup]="loginForm" (ngSubmit)="login()">
         <div class="form-group">
             <label for="email">Email ID</label>
-            <input type="email" class="form-control mb-3" formControlName="email">
+            <input type="email" class="form-control mb-4" formControlName="email">
         </div>
         
-        <button [disabled]="!loginForm.valid" type="submit" class="btn mb-3 mt-2">Send Email with Reset Link</button>
+        <!-- login or submit button -->
+        <button [disabled]="!loginForm.valid" type="submit" class="btn mb-3 mt-4">Send Email with Reset Link</button>
+        
         <p class="footer-text">Dont have an account?   <a href="/signup">Sign Up here</a></p>
         </form>

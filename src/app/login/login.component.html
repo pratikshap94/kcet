@@ -1,28 +1,34 @@
 <p>Welcome back</p>
-      <p class="heading">Login to your account</p>
+      <h4 class="heading">Login to your account</h4>
+
       <form [formGroup]="loginForm" (ngSubmit)="login()">
         <div class="form-group">
             <label for="email">Email ID</label>
             <input [class.is-invalid]="loginForm.get('email').invalid && loginForm.get('email').touched" type="email" class="form-control mb-3" formControlName="email">
             <small [class.d-none]="loginForm.get('email').valid || loginForm.get('email').untouched" >Text required</small>
-
         </div>
+
         <div class="form-group">
               <label for="password">Password</label>
-              <input type="password" class="form-control mb-3" formControlName ="password">
+              <input type="password" class="form-control mb-4" formControlName ="password">
         </div>
-        <span class="">Remember me</span>
-        <span><a href="/reset" class="side-text">Forgot Password?</a></span>
-        <button *ngIf = "!isShow" [disabled]="!loginForm.valid" type="submit" class="btn mb-3 mt-2" (click)="onclick()">Login now</button>
 
+        <span class=""><input type="radio">  Remember me</span>
+        <span><a href="/reset" class="side-text">Forgot Password?</a></span>
+
+        <!-- Login now button -->
+        <button *ngIf = "!isShow" [disabled]="!loginForm.valid" type="submit" class="btn mb-3 mt-4" (click)="onclick()">Login now</button>
+
+        <!-- spinner -->
         <button class="btn mb-3 mt-2" *ngIf = "isShow">
             <div  class="spinner-border spinner-border-sm" role="status">
                   <span class="sr-only"></span>
               </div>
         </button>
         
-
+        <!-- Sign-in Google button  -->
         <button id="googleBtn" class="btn btn-google mb-4"><img src="assets/images/google_logo.png">Sign-in with Google</button>
+        
         <p class="footer-text">Dont have an account?   <a href="/signup">Join free today</a></p>
       </form>
         

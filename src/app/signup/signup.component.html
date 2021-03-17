@@ -1,5 +1,6 @@
 <p>Hi there!</p>
       <h4 class="heading">Signup for an account</h4>
+
       <form [formGroup]="loginForm" (ngSubmit)="login()">
         <div class="form-group">
             <label for="email">Email ID</label>
@@ -7,11 +8,16 @@
         </div>
         <div class="form-group">
               <label for="password">Password</label>
-              <input type="password" class="form-control mb-3" formControlName ="password">
+              <input type="password" class="form-control mb-4" formControlName ="password">
         </div>
-        <span class="">Remember me</span>
-        <button [disabled]="!loginForm.valid" type="submit" class="btn mb-3 mt-2">Login now</button>
 
+        <span class="">Remember me</span>
+
+        <!-- login button -->
+        <button [disabled]="!loginForm.valid" type="submit" class="btn mb-3 mt-4">Login now</button>
+
+        <!-- sign-in with google button -->
         <button id="googleBtn" class="btn btn-google mb-4"><img src="assets/images/google_logo.png">Sign-in with Google</button>
+        
         <p class="footer-text"> Already have an account?  <a href="/login"> Login Here</a></p>  
       </form>

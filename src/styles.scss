@@ -13,7 +13,6 @@ body{
   
 .heading{
   font-weight: bold;
-  font-size: 150%;
   margin-bottom: 10%;
 }
 
@@ -21,6 +20,7 @@ form{
     margin-top: 7%;
     font-weight: 500;
   }
+
   label{
     margin-bottom:1.9%;
   }
@@ -35,16 +35,15 @@ form{
   .btn{
     background-color: #3EBC78;
     width: 100%;
-    height: 100%;
+    height: 43px;
     color: white;
     border-radius: 5px;
     font-style: normal;
     font-size: 16px;
     line-height: 20px;
 }
-input:focus{
-  box-shadow: none;
-}
+
+
 
 .btn-google{
   background: #2D3748;
@@ -60,15 +59,16 @@ input:focus{
 }
   
 span{
-  font-size: 14px;  
+  font-size: 14px; 
+  
 }
 
+// For forgot password
 .side-text{
-  text-align: right;
-  margin-left: 25%;
+  margin-left: 18%;
 }
+
 .footer-text{
   font-size: 14px;  
-text-align: center;
-margin-top: 5%;
+  margin-top: 5%;
 }
